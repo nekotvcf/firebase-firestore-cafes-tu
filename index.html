@@ -1,0 +1,44 @@
+<html>
+    <head>
+        <script src="https://www.gstatic.com/firebasejs/7.14.6/firebase-app.js"></script>
+        <script src="https://www.gstatic.com/firebasejs/7.14.6/firebase-firestore.js"></script>
+        <!-- <script src="https://www.gstatic.com/firebasejs/5.0.3/firebase-firestore.js"></script> -->
+        <link rel="stylesheet" href="styles.css">
+    </head>
+    <body>
+
+        <h1>Cafe</h1>
+
+        <div class="content">
+
+            <form id="add-cafe-form">
+                <input type="text" name="name" placeholder="Cafe name" >
+                <input type="text" name="city" placeholder="City" >
+                <button>Add Cafe</button>
+            </form>
+
+            <ul id="cafe-list"></ul>
+
+        </div>
+
+        <script>
+            // Your web app's Firebase configuration
+            var firebaseConfig = {
+              apiKey: "AIzaSyCwjLIQLozC6zVnY2ZAhSbGNGa7aDFijgY",
+              authDomain: "ninja-firestore-tut-cec28.firebaseapp.com",
+              databaseURL: "https://ninja-firestore-tut-cec28.firebaseio.com",
+              projectId: "ninja-firestore-tut-cec28",
+              storageBucket: "ninja-firestore-tut-cec28.appspot.com",
+              messagingSenderId: "757274919519",
+              appId: "1:757274919519:web:8f7c3e6f0ea339f9d851ea"
+            };
+
+            // Initialize Firebase
+            firebase.initializeApp(firebaseConfig);
+            const db = firebase.firestore();
+            //db.settings({timestampsInSnapshots: true});
+ 
+        </script>
+        <script src="app.js"></script>
+    </body>
+</html>
